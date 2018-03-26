@@ -1,3 +1,4 @@
+// @flow
 /* eslint jsx-a11y/href-no-hash: 0 jsx-a11y/anchor-is-valid: 0 */
 import React, { Component } from 'react';
 import './App.css';
