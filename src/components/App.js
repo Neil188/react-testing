@@ -22,7 +22,7 @@ export default class App extends Component {
                     </nav>
                 </div>
                 <div>
-                    <Grid items={this.state.courses}/>
+                    <Grid items={this.state.courses} />
                 </div>
             </div>
         );

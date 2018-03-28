@@ -5,7 +5,7 @@ const Single = ({item}) => (
     <li className="col l6 s12">
         <div className="card">
             <div className="card-image">
-                <img src={item.image} alt={item.title}/>
+                <img src={item.image} alt={item.title} />
             </div>
             <div className="card-content">
                 <span className="card-title">{item.title}</span>
@@ -22,10 +22,14 @@ const Single = ({item}) => (
                 </div>
             </div>
             <div className="card-action">
-                <a href={item.link} target="_blank">Link to course</a>
+                <a href={item.link}
+                    target="_blank"
+                    rel="noreferrer noopener">
+                    Link to course
+                </a>
             </div>
         </div>
-        <br/>
+        <br />
     </li>
 );
 
