@@ -11,18 +11,22 @@ export default class Grid extends Component {
 
     render() {
         return(
-            <div>
-                <div className="row">
-                    <ul>
-                        {this.renderList()}
-                    </ul>
-                </div>
-            </div>
+            <ul className="row">
+                {this.renderList()}
+            </ul>
         );
     }
 }
 
 Grid.propTypes = {
-    // eslint-disable-next-line
-    items: PropTypes.array.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number,
+        title: PropTypes.string,
+        category: PropTypes.string,
+        description: PropTypes.string,
+        link: PropTypes.string,
+        release_date: PropTypes.string,
+        views: PropTypes.string,
+        image: PropTypes.string,
+    })).isRequired,
 };
