@@ -1,6 +1,6 @@
 // @flow
 /* eslint jsx-a11y/href-no-hash: 0 jsx-a11y/anchor-is-valid: 0 */
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 import Grid from './listings/Grid';
 import courses from '../data/courses.json';
@@ -13,7 +13,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
+            <Fragment>
                 <div className="navbar-fixed">
                     <nav className="blue lighten-2">
                         <div className="nav-wrapper">
@@ -21,10 +21,8 @@ export default class App extends Component {
                         </div>
                     </nav>
                 </div>
-                <div>
-                    <Grid items={this.state.courses} />
-                </div>
-            </div>
+                <Grid items={this.state.courses} />
+            </Fragment>
         );
     }
 }
