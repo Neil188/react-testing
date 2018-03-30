@@ -38,5 +38,13 @@
       "function-name-case": null,
       "indentation": 4
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!src/registerServiceWorker.js"
+    ]
   }
 }
