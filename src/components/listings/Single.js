@@ -34,8 +34,17 @@ const Single = ({item}) => (
 );
 
 Single.propTypes = {
-    // eslint-disable-next-line
-    item: PropTypes.object.isRequired,
+
+    item: PropTypes.shape({
+        id: PropTypes.number,
+        title: PropTypes.string,
+        category: PropTypes.string,
+        description: PropTypes.string,
+        link: PropTypes.string,
+        release_date: PropTypes.string,
+        views: PropTypes.string,
+        image: PropTypes.string,
+    }).isRequired,
 };
 
 export default Single;
