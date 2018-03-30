@@ -56,6 +56,7 @@ exports[`Single snapshots Single snapshot test 1`] = `
     >
       <a
         href="https://www.lynda.com/React-js-tutorials/Building-App-React-js-MeteorJS/533228-2.html"
+        rel="noreferrer noopener"
         target="_blank"
       >
         Link to course
